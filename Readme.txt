@@ -1,1 +1,86 @@
-�\�t�g���Fswap_items.jsx 0.2���C�Z���X�FGNU GPLv3�]�ڏ����F���[���ɂĊm�F�@�@��ҁF�s�삹�����[�^(c)2008-2009 Seuzo Ichikawa������FMacOS X10.5.6�AInDesign CS4_J�i6.0.1�j�J�����FMac Pro Quad 3GHz�iIntel�j�AExtendScript Toolkit�J������FJavaScript���k���@�Fzip�R�����g�F**��������X�N���v�g���H�I�����Ă���Q�̃y�[�W�A�C�e���̈ʒu�����ւ��܂��B�ȒP�Ȏg���������Fhttp://www.youtube.com/watch?v=Kn_6PjI-Djs**�����t�@�C��3FilesReadme.txt	���̃t�@�C���ł��B�Ƃɂ����ŏ��ɂ��ł��������Bswap_items.jsx	�X�N���v�g�{�̂ł��Bswap_items_GUI_setting.jsx	���ݒ�̂��߂̃X�N���v�g�B**�g�p�������̃X�N���v�g������ɓ��삷����͈ȉ��̒ʂ�ł��BWindows���ł����삷��\��������܂��������؂ł��B-MacOS X10.5.6-InDesign CS4_J�i6.0.1�j**�_�E�����[�h[http://www.seuzo.jp/st/scripts_InDesignCS4/index.html#swap_items]git�����g���̕��͂�����F[http://github.com/seuzo/swap_items/]**�C���X�g�[���uswap_items.jsx�v�Ɓuswap_items_GUI_setting.jsx�v��/Applications/Adobe InDesign CS3/Scripts/Scripts Panel/�܂���~/Library/Preferences/Adobe InDesign/Version 5.0-J/Scripts/Scripts Panel/�ɃR�s�[���Ă��������B�G�C���A�X�����Ă��������ł����܂��܂���B�X�N���v�g�p���b�g����g�p���܂��B�uswap_items.jsx�v�Ɓuswap_items_GUI_setting.jsx�v�͓����t�H���_�K�w�ɒu���Ă����Ă��������B�uswap_items.jsx�v�̖��O��ύX����ꍇ�́A�uswap_items_GUI_setting.jsx�v��18�s�ڂ�����ɂ���const TARGET_FILE_NAME = "swap_items.jsx";�ŃX�N���v�g����ҏW���Ă��������B**�g�p���@+�u�E�C���h�E�v���j���[����u�X�N���v�e�B���O�v�[�u�X�N���v�g�v��I�����A�X�N���v�g�p���b�g���o���܂��B+�y�[�W�A�C�e�����Q�I�����܂��B+�X�N���v�g�p���b�g����A�X�N���v�g�uswap_items.jsx�v���_�u���N���b�N���܂��B�V���[�g�J�b�g�����蓖�ĂĂ����Ƃ���ɕ֗��B**�ݒ��X�N���v�g�p���b�g����uswap_items_GUI_setting.jsx�v���_�u���N���b�N���Ă��������B�u�A�C�e���̈ړ���_�v�|�b�v�A�b�v����uleft-top�v�uright-top�v�uleft-bottom�v�uright-bottom�v�̂����ꂩ��I��ł��������B�Ⴆ�΁uleft-top�v��I�ԂƁA���ꂼ��̃A�C�e���̍�����ړ���_�Ƃ��ĔF�����܂��B�u�I�u�W�F�N�g�̏d�Ȃ菇���i�K�w�j�����ւ���v�`�F�b�N�{�b�N�X�Ƀ`�F�b�N������ƁA�ٓ���̃A�C�e���������Ă����I�u�W�F�N�g�̏d�Ȃ菇�i�A�����W�j�����ւ���悤�ɂȂ�܂��B��������̃y�[�W�A�C�e�������y�[�W��ł��̃`�F�b�N��L���ɂ���ƁA�������x���Ȃ�\��������܂��B�u���C���[�����ւ���v�`�F�b�N�{�b�N�X�Ƀ`�F�b�N������ƁA���ꂼ��̏������C���[�����ւ���悤�ɂȂ�܂��B�uswap_items_GUI_setting.jsx�v�̓X�N���v�g�uswap_items.jsx�v���̂��̂����������܂��B���̂��߁A�܂�Ɂuswap_items.jsx�v���j�����邱�Ƃ�����܂��B���̂悤�ȏꍇ�͍ēx�_�E�����[�h���Ă��������B**���m�̕s��A�܂���ToDo**�Ɛӎ���-�{�A�v���P�[�V������InDesign�ɂ������ƌ����x���Ȃ̂ł����āA�������ʂ�ۏ؂�����̂ł͂���܂���B���Ȃ炸�m�F������邱�Ƃ��������߂��܂��B-���̃c�[�����g�p�����Ńf�[�^�̔j���Ȃǂ̂�����s��E�s���v�ɂ��Ă͈�؂̐ӔC�𕉂����˂܂��̂ł��������������B-���̃c�[���͂��ׂĂ�Macintosh��Mac OS��œ��������Ƃ����m�F���Ƃ��Ă��܂��񂵁A������o���܂���B���������āA�����ۏ؂�����̂ł͂���܂���B**���C�Z���XGNU GPLv3http://sourceforge.jp/projects/opensource/wiki/licenses%252FGNU_General_Public_License_version_3.0**���@��2007-03-18	ver.0.1	�Ƃ肠�����B�ureplace_items.jsx�v�ureplace_items_GUI_setting.jsx�v�Ƃ������O�Ń����[�X�B[http://d.hatena.ne.jp/seuzo/20080316/1205641922:title=�I�����Ă���Q�̃y�[�W�A�C�e���̈ʒu�����ւ� - �����Ȃ��e�N�m��]2009-04-24	ver.0.2	InDesign CS4�Ή��B�uswap_items.jsx�v�uswap_items_GUI_setting.jsx�v�Ƃ������O�ɕύX�B�X�v���b�h����]�\�����Ă���Ƃ��́A�����𒆎~����悤�ɂ����B�y�[�W�A�C�e���̏d�Ȃ菇�𐳂������삷��悤�ɏC�������B�s�삹�����[http://www.seuzo.jp/
+ソフト名：swap_items.jsx 0.2
+ライセンス：GNU GPLv3
+転載条件：メールにて確認
+　　作者：市川せうぞー／(c)2008-2009 Seuzo Ichikawa
+動作環境：MacOS X10.5.6、InDesign CS4_J（6.0.1）
+開発環境：Mac Pro Quad 3GHz（Intel）、ExtendScript Toolkit
+開発言語：JavaScript
+圧縮方法：zip
+コメント：
+
+**何をするスクリプトか？
+選択している２つのページアイテムの位置を入れ替えます。
+簡単な使い方説明：
+http://www.youtube.com/watch?v=Kn_6PjI-Djs
+
+
+**同梱ファイル3Files
+Readme.txt	このファイルです。とにかく最初によんでください。
+swap_items.jsx	スクリプト本体です。
+swap_items_GUI_setting.jsx	環境設定のためのスクリプト。
+
+
+**使用条件
+このスクリプトが正常に動作する環境は以下の通りです。Windows環境でも動作する可能性がありますが未検証です。
+-MacOS X10.5.6
+-InDesign CS4_J（6.0.1）
+
+
+**ダウンロード
+[http://www.seuzo.jp/st/scripts_InDesignCS4/index.html#swap_items]
+gitをお使いの方はこちら：
+[http://github.com/seuzo/swap_items/]
+
+
+**インストール
+「swap_items.jsx」と「swap_items_GUI_setting.jsx」を
+/Applications/Adobe InDesign CS3/Scripts/Scripts Panel/
+または
+~/Library/Preferences/Adobe InDesign/Version 5.0-J/Scripts/Scripts Panel/
+にコピーしてください。エイリアスを入れておくだけでもかまいません。
+スクリプトパレットから使用します。
+
+「swap_items.jsx」と「swap_items_GUI_setting.jsx」は同じフォルダ階層に置いておいてください。
+「swap_items.jsx」の名前を変更する場合は、「swap_items_GUI_setting.jsx」の18行目あたりにある
+const TARGET_FILE_NAME = "swap_items.jsx";
+でスクリプト名を編集してください。
+
+
+
+**使用方法
++「ウインドウ」メニューから「スクリプティング」ー「スクリプト」を選択し、スクリプトパレットを出します。
++ページアイテムを２つ選択します。
++スクリプトパレットから、スクリプト「swap_items.jsx」をダブルクリックします。ショートカットを割り当てておくとさらに便利。
+
+
+**設定
+スクリプトパレットから「swap_items_GUI_setting.jsx」をダブルクリックしてください。
+「アイテムの移動基準点」ポップアップから「left-top」「right-top」「left-bottom」「right-bottom」のいずれかを選んでください。例えば「left-top」を選ぶと、それぞれのアイテムの左上を移動基準点として認識します。
+「オブジェクトの重なり順序（階層）を入れ替える」チェックボックスにチェックを入れると、異動先のアイテムが持っていたオブジェクトの重なり順（アレンジ）を入れ替えるようになります。たくさんのページアイテムを持つページ上でこのチェックを有効にすると、処理が遅くなる可能性があります。
+「レイヤーを入れ替える」チェックボックスにチェックを入れると、それぞれの所属レイヤーを入れ替えるようになります。
+「swap_items_GUI_setting.jsx」はスクリプト「swap_items.jsx」そのものを書き換えます。そのため、まれに「swap_items.jsx」が破損することがあります。そのような場合は再度ダウンロードしてください。
+
+
+**既知の不具合、またはToDo
+
+
+**免責事項
+-本アプリケーションはInDesignにおける作業効率支援なのであって、処理結果を保証するものではありません。かならず確認をされることをおすすめします。
+-このツールを使用する上でデータの破損などのあらゆる不具合・不利益については一切の責任を負いかねますのでご了解ください。
+-このツールはすべてのMacintoshとMac OS上で動作をするという確認をとっていませんし、事実上出来ません。したがって、動作を保証するものではありません。
+
+
+**ライセンス
+GNU GPLv3
+http://sourceforge.jp/projects/opensource/wiki/licenses%252FGNU_General_Public_License_version_3.0
+
+
+**履　歴
+2007-03-18	ver.0.1	とりあえず。「replace_items.jsx」「replace_items_GUI_setting.jsx」という名前でリリース。[http://d.hatena.ne.jp/seuzo/20080316/1205641922:title=選択している２つのページアイテムの位置を入れ替え - 名もないテクノ手]
+2009-04-24	ver.0.2	InDesign CS4対応。「swap_items.jsx」「swap_items_GUI_setting.jsx」という名前に変更。スプレッドが回転表示しているときは、処理を中止するようにした。ページアイテムの重なり順を正しく動作するように修正した。
+
+
+
+
+市川せうぞー
+http://www.seuzo.jp/
