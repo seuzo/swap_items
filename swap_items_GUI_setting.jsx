@@ -81,6 +81,7 @@ function str2boolean (str) {
 
 
 ////////////////////////////////////////////以下実行ルーチン
+app.scriptPreferences.userInteractionLevel = UserInteractionLevels.interactWithAll;
 var my_script_path = get_my_script_path();//このスクリプトのフルパス名
 var my_script_folder = File (my_script_path).parent;//コンテナフォルダ
 var my_file_path = my_script_folder + "/" + TARGET_FILE_NAME;//ターゲットのファイルパス

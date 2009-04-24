@@ -78,6 +78,7 @@ http://sourceforge.jp/projects/opensource/wiki/licenses%252FGNU_General_Public_L
 **履　歴
 2007-03-18	ver.0.1	とりあえず。「replace_items.jsx」「replace_items_GUI_setting.jsx」という名前でリリース。[http://d.hatena.ne.jp/seuzo/20080316/1205641922:title=選択している２つのページアイテムの位置を入れ替え - 名もないテクノ手]
 2009-04-24	ver.0.2	InDesign CS4対応。「swap_items.jsx」「swap_items_GUI_setting.jsx」という名前に変更。スプレッドが回転表示しているときは、処理を中止するようにした。ページアイテムの重なり順を正しく動作するように修正した。
+2009-04-24	ver.0.2.1	ダイアログを出す前にUserInteractionLevels.interactWithAllとした。
 
 
 
