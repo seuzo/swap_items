@@ -1,4 +1,4 @@
-/*
+﻿/*
 replace_items.jsx
 (c)2008 www.seuzo.jp
 選択している２つのページアイテムの位置を入れ替えます。
@@ -6,6 +6,7 @@ replace_items.jsx
 ・History
 2007-03-18	ver.0.1	とりあえず。「replace_items.jsx」「replace_items_GUI_setting.jsx」という名前でリリース。[http://d.hatena.ne.jp/seuzo/20080316/1205641922:title=選択している２つのページアイテムの位置を入れ替え - 名もないテクノ手]
 2009-04-24	ver.0.2	InDesign CS4対応。「swap_items.jsx」「swap_items_GUI_setting.jsx」という名前に変更。スプレッドが回転表示しているときは、処理を中止するようにした。ページアイテムの重なり順を正しく動作するように修正した。
+2009-08-21	ver.0.2.2	右綴じの時、スプレッドの回転を誤認識するバグを改善。
 */
 
 
@@ -22,43 +23,45 @@ function myerror(mess) {
   exit();
 }
 
-////////////////////////////////////////////スプレッドの回転角度を得る 
-function get_spread_rotation(spread_orPage_obj) {
-	if (spread_orPage_obj instanceof Spread) {
-		var my_document = spread_orPage_obj.parent;
-		var my_page = spread_orPage_obj.pages[0];
-	} else if (spread_orPage_obj instanceof Page) {
-		var my_document = spread_orPage_obj.parent.parent;
-		var my_page = spread_orPage_obj.parent.pages[0];
-	} else {
-		return false;
+////////////////////////////////////////////スプレッドの回転角度を調べる （1スプレッド2ページまで対応）
+function get_spread_angle(spread_obj) {
+	var my_document, my_old_ruler_origin, my_old_zeroPoint, my_page, my_page_bounds, my_angle, migitoji, i;
+	my_document = app.activeDocument;
+	my_old_ruler_origin = false;//
+	if (my_document.viewPreferences.rulerOrigin !== 1380143215) {//not page
+		my_old_ruler_origin = my_document.viewPreferences.rulerOrigin;//current setting
+		my_document.viewPreferences.rulerOrigin = 1380143215;//change ルーラーをページに
 	}
-	
-	var my_org_ruler_origin = false;//
-	if (my_document.viewPreferences.rulerOrigin != RulerOrigin.PAGE_ORIGIN) {
-		my_old_ruler_origin = my_document.viewPreferences.rulerOrigin;
-		my_document.viewPreferences.rulerOrigin = RulerOrigin.PAGE_ORIGIN;
-	}
-	var my_org_zeroPoint = false;
-	if (my_document.zeroPoint != [0, 0]) {
+	my_old_zeroPoint = false;
+	if (my_document.zeroPoint !== [0, 0]) {
 		my_old_zeroPoint = my_document.zeroPoint;
 		my_document.zeroPoint = [0,0];
 	}
 
-	var my_page_bounds = my_page.bounds;
-	var my_angle = -1;
-	if((my_page_bounds[0] == 0) && (my_page_bounds[1] == 0)) {
+	my_page = spread_obj.pages[0];
+	my_page_bounds = my_page.bounds;
+	migitoji = 0;//右綴じかどうかのカウンター。migitoji===1なら右綴じの見開き
+	for (i = 0; i< my_page_bounds.length; i++) {
+		if (my_page_bounds[i] === 0) {migitoji++}
+	}
+	if (migitoji === 1) {//右綴じの見開きは右ページ基点
+		my_page = spread_obj.pages[1];
+		my_page_bounds = my_page.bounds;
+	}
+
+	my_angle = -1;
+	if((my_page_bounds[0] === 0) && (my_page_bounds[1] === 0)) {
 		my_angle = 0;
-	} else if ((my_page_bounds[0] == 0) && (my_page_bounds[3] == 0)) {
+	} else if ((my_page_bounds[0] === 0) && (my_page_bounds[3] === 0)) {
 		my_angle = 90;
-	} else if ((my_page_bounds[2] == 0) && (my_page_bounds[3] == 0)) {
+	} else if ((my_page_bounds[2] === 0) && (my_page_bounds[3] === 0)) {
 		my_angle = 180;
-	} else if ((my_page_bounds[1] == 0) && (my_page_bounds[2] == 0)) {
+	} else if ((my_page_bounds[1] === 0) && (my_page_bounds[2] === 0)) {
 		my_angle = 270;
 	}
 
-	if(my_org_ruler_origin) {my_document.viewPreferences.rulerOrigin = my_old_ruler_origin}
-	if(my_org_zeroPoint) {my_document.zeroPoint = my_old_zeroPoint}
+	if(my_old_ruler_origin) {my_document.viewPreferences.rulerOrigin = my_old_ruler_origin}
+	if(my_old_zeroPoint) {my_document.zeroPoint = my_old_zeroPoint}
 	return my_angle;
 }
 
@@ -115,7 +118,7 @@ if (my_selection.length != 2) {myerror("2つのオブジェクトを選択して
 //スプレッドが回転していたら、エラーで中止。ver6.0（InDesign CS4）以上
 if (parseInt(app.version) <= 6) {
 	var my_spread = app.layoutWindows[0].activeSpread;
-	if (get_spread_rotation(my_spread) != 0) {myerror("スプレッドが回転しています。元に戻してから実行してください。")};
+	if (get_spread_angle(my_spread) != 0) {myerror("スプレッドが回転しています。元に戻してから実行してください。")};
 }
 
 //オブジェクト種類の検査
@@ -181,4 +184,3 @@ if (my_replace_index) {
 	change_index(my_obj_A, my_index_B[2]);
 	change_index(my_obj_B, my_index_A[2]);
 }
-

@@ -1,8 +1,8 @@
-ソフト名：swap_items.jsx 0.2
+ソフト名：swap_items.jsx 0.2.2
 ライセンス：GNU GPLv3
 転載条件：メールにて確認
 　　作者：市川せうぞー／(c)2008-2009 Seuzo Ichikawa
-動作環境：MacOS X10.5.6、InDesign CS4_J（6.0.1）
+動作環境：MacOS X10.5.8、InDesign CS4_J（6.0.3）
 開発環境：Mac Pro Quad 3GHz（Intel）、ExtendScript Toolkit
 開発言語：JavaScript
 圧縮方法：zip
@@ -22,8 +22,8 @@ swap_items_GUI_setting.jsx	環境設定のためのスクリプト。
 
 **使用条件
 このスクリプトが正常に動作する環境は以下の通りです。Windows環境でも動作する可能性がありますが未検証です。
--MacOS X10.5.6
--InDesign CS4_J（6.0.1）
+-MacOS X10.5.8
+-InDesign CS4_J（6.0.3）
 
 
 **ダウンロード
@@ -79,6 +79,7 @@ http://sourceforge.jp/projects/opensource/wiki/licenses%252FGNU_General_Public_L
 2007-03-18	ver.0.1	とりあえず。「replace_items.jsx」「replace_items_GUI_setting.jsx」という名前でリリース。[http://d.hatena.ne.jp/seuzo/20080316/1205641922:title=選択している２つのページアイテムの位置を入れ替え - 名もないテクノ手]
 2009-04-24	ver.0.2	InDesign CS4対応。「swap_items.jsx」「swap_items_GUI_setting.jsx」という名前に変更。スプレッドが回転表示しているときは、処理を中止するようにした。ページアイテムの重なり順を正しく動作するように修正した。
 2009-04-24	ver.0.2.1	ダイアログを出す前にUserInteractionLevels.interactWithAllとした。
+2009-08-21	ver.0.2.2	右綴じの時、スプレッドの回転を誤認識するバグを改善。
 
 
 
